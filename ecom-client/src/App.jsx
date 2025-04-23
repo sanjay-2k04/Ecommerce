@@ -4,6 +4,7 @@ import Product from "./Components/Products.jsx";
 import Home from "./Components/Home.jsx";
 import ProductDetail from "./Components/Prod1.jsx";
 import Cart from "./Components/Cart.jsx";
+import Login from "./Components/login.jsx"; 
 
 function App() {
   return (
@@ -36,18 +37,12 @@ function App() {
               </svg>
               Cart
             </a>
-            <a href="#" className="hover:text-teal-100 transition duration-200 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              Contact
-            </a>
-            <button className="bg-white text-teal-600 px-4 py-2 rounded-lg shadow hover:bg-teal-50 transition duration-200 font-medium flex items-center">
+            <a href="/login" className="bg-white text-teal-600 px-4 py-2 rounded-lg shadow hover:bg-teal-50 transition duration-200 font-medium flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               Login
-            </button>
+            </a>
           </nav>
         </header>
         
@@ -58,6 +53,7 @@ function App() {
             <Route path="/product" element={<Product />} />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/login" element={<Login />} /> {/* Add this new route */}
           </Routes>
         </main>
         

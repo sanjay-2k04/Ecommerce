@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+// import dal from "/run/media/sanjay/New Volume/Full Stack Projects/Ecommerce/ecom-client/src/assets/kadala_parupu.png";
 
 function Products() {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ function Products() {
       id: 1,
       name: "Modern Desk Lamp",
       description: "Adjustable LED desk lamp with multiple brightness settings and color temperatures.",
-      image: "/api/placeholder/300/300",
+      // image: dal,
       price: 79.99
     },
     {
