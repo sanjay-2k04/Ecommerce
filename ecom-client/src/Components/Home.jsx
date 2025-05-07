@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import dal from "../assets/moong_dal.png";
 
 function Home() {
   return (

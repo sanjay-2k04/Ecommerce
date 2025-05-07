@@ -1,99 +1,89 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import img from "../assets/NATURE.png";
+import turmeric from '../assets/grocery items/masala/turmeric masala.jpg'
+import dal from '../assets/grocery items/dal/pasi dal.jpg'
+import flour from '../assets/grocery items/flour/wheat flour.jpg'
+import makeup from '../assets/grocery items/makeup/ponds powder.webp'
+import oil from '../assets/grocery items/oil/sunflower oil.jpg'
+import pulses from '../assets/grocery items/pulses/mookadalai white.jpg'
+import rice from '../assets/grocery items/rice/briyani rice.jpg'
+import shampoo from '../assets/grocery items/shampoo/clinic plus.jpg'
+import snacks from '../assets/grocery items/snacks/lays.jpg'
+import soap from '../assets/grocery items/soap/cinthol soap.jpg'
 
 function Products() {
   // Extended product data
   const products = [
     {
       id: 1,
-      name: "Modern Desk Lamp",
+      name: "Dal",
       description: "Adjustable LED desk lamp with multiple brightness settings and color temperatures.",
-      image: img
+      image: dal,
+      price: 79.99
     },
     {
       id: 2,
-      name: "Wireless Headphones",
+      name: "Flour",
       description: "Premium noise-cancelling headphones with 30-hour battery life and comfortable fit.",
-      image: img
+      image: flour,
+      price: 129.99
     },
     {
       id: 3,
-      name: "Smart Watch",
+      name: "Makeup",
       description: "Fitness tracker with heart rate monitoring, sleep analysis, and smartphone notifications.",
-      image: img
+      image: makeup,
+      price: 199.99
     },
     {
       id: 4,
-      name: "Portable Bluetooth Speaker",
-      description: "Waterproof speaker with 360° sound and 12 hours of battery life.",
-      image: img
+      name: "Masala",
+      description: "Waterproof speaker with 360° sound and 20-hour playtime for outdoor adventures.",
+      image: turmeric,
+      price: 89.99
     },
     {
       id: 5,
-      name: "Digital Camera",
-      description: "20MP camera with 4K video recording and advanced autofocus technology.",
-      image: img
+      name: "Oil",
+      description: "RGB backlit gaming keyboard with customizable mechanical switches and macro keys.",
+      image: oil,
+      price: 149.99
     },
     {
       id: 6,
-      name: "Coffee Maker",
-      description: "Programmable coffee maker with built-in grinder and thermal carafe.",
-      image: img
+      name: "Pulses",
+      description: "34-inch curved display with 1440p resolution and 144Hz refresh rate for immersive viewing.",
+      image: pulses,
+      price: 399.99
     },
     {
       id: 7,
-      name: "Ergonomic Office Chair",
-      description: "Adjustable chair with lumbar support and breathable mesh back.",
-      image: img
+      name: "Rice",
+      description: "Adjustable lumbar support and breathable mesh design for all-day comfort.",
+      image: rice,
+      price: 249.99
     },
     {
       id: 8,
-      name: "Wireless Earbuds",
-      description: "True wireless earbuds with noise isolation and touch controls.",
-      image: img
+      name: "Shampoo",
+      description: "Fast-charging Qi-compatible charging station with sleek minimalist design.",
+      image: shampoo,
+      price: 39.99
     },
     {
       id: 9,
-      name: "Smart Home Hub",
-      description: "Central control for all your smart home devices with voice assistant.",
-      image: img
+      name: "Snacks",
+      description: "Control all your smart devices with voice commands and automated routines.",
+      image: snacks,
+      price: 119.99
     },
     {
       id: 10,
-      name: "Air Purifier",
-      description: "HEPA filter purifier for rooms up to 500 sq ft with air quality monitor.",
-      image: img
-    },
-    {
-      id: 11,
-      name: "Fitness Tracker",
-      description: "Waterproof activity tracker with heart rate monitoring and sleep tracking.",
-      image: img
-    },
-    {
-      id: 12,
-      name: "Mechanical Keyboard",
-      description: "Customizable RGB backlit mechanical keyboard with tactile switches.",
-      image: img
-    },
-    {
-      id: 13,
-      name: "Wireless Mouse",
-      description: "Ergonomic wireless mouse with adjustable DPI and programmable buttons.",
-      image: img
-    },
-    {
-      id: 14,
-      name: "External SSD",
-      description: "1TB portable solid state drive with USB-C connectivity and durable design.",
-      image: img
-    },
-    {
-      id: 15,
-      name: "Smart Thermostat",
-      description: "Energy-saving thermostat that learns your preferences and schedule.",
-      image: img
+      name: "Soap",
+      description: "Control all your smart devices with voice commands and automated routines.",
+      image: soap,
+      price: 119.99
     }
   ];
 
